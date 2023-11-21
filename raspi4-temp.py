@@ -8,9 +8,9 @@ import influxdb_client
 def main():
 
     url="http://localhost:8086"
-    token = "cIqwizWxnzr5IAOyesBdrW9t1XubOOge0R43otIENtKV7jY9sd695ZXDK17lWiBbrRrP_j9uuCw18JQFzg7LdA=="
-    org = "home"
-    bucket = "室温"
+    token = ""
+    org = ""
+    bucket = ""
     client = influxdb_client.InfluxDBClient(url=url,token=token,org=org)
 
     # 初期化
