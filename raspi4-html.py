@@ -24,7 +24,7 @@ def main():
     temp = ("%-6.2f" % data_all.temperature)
     pre = ("%7.2f" % data_all.pressure)
     hum = ("%6.2f" % data_all.humidity)
-    ambi = ambient.Ambient(64210, "623cf410407b8a34")
+    ambi = ambient.Ambient()
     r = ambi.send({"d1": temp, "d2": pre, "d3": hum})
     # データー送る
 
